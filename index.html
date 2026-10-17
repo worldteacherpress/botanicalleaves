@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Meet the leaves behind your colouring book. Explore 52 botanical illustrations, discover leaf shapes and learn through observation.">
+  <meta name="theme-color" content="#214b39"><title>Botanical Leaves · World Teacher Press</title>
+  <link rel="stylesheet" href="style.css"><script src="plants.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+  <header class="header"><a class="brand" href="#" aria-label="Botanical Leaves home"><span class="brand-icon">❧</span><span>World Teacher Press<small>THE BOTANICAL COLLECTION</small></span></a><nav aria-label="Main navigation"><a href="#collection">Explore the leaves</a><a href="#about">About the book</a></nav></header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title"><div class="hero-copy"><p class="eyebrow">LOOK CLOSER. COLOUR. DISCOVER.</p><h1 id="hero-title">Every leaf<br>has a <em>story.</em></h1><p class="intro">A little curiosity can grow into something wonderful. Meet the plants behind your colouring book, one leaf at a time.</p><a class="button" href="#collection">Explore the collection <span aria-hidden="true">↗</span></a><div class="hero-note"><span>52</span><p>botanical pages<br>so many ways to see nature</p></div></div><div class="hero-art"><img src="assets/cover.jpg" alt="Botanical Leaves colouring book cover framed by green and golden leaves" fetchpriority="high"><span class="art-label">A WORLD OF LEAVES, WAITING TO BE DISCOVERED</span></div></section>
+    <section id="collection" class="collection"><div class="section-heading"><div><p class="eyebrow">YOUR FIELD GUIDE</p><h2>Find your leaf.</h2></div><p>From familiar woodland trees to tropical wonders.<br>Choose a leaf and let your curiosity lead.</p></div><div class="tools"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search by common or botanical name…" aria-label="Search plants"></label><label class="sort-label">Sort <select id="sort"><option value="name">A–Z</option><option value="reverse">Z–A</option></select></label></div><div class="filters" role="group" aria-label="Filter plants by group"></div><div class="results-line"><p id="result-count" role="status"></p><button id="surprise" class="text-button">Surprise me ↗</button></div><div id="grid" class="grid"></div><div id="empty" hidden><h3>No leaves found.</h3><p>Try a different name or choose another group.</p><button id="reset" class="button">Show all plants</button></div></section>
+    <section id="about" class="about"><p class="eyebrow">MORE THAN A COLOURING BOOK</p><h2>Colour a leaf.<br><em>Grow your curiosity.</em></h2><p>This companion to <i>Botanical Leaves</i> invites you to slow down, notice the details and explore the natural world. Scan a code in your book to meet a plant, or wander through the collection here.</p><div class="steps"><div><span>01</span><h3>Look</h3><p>Notice the outline, edges and veins.</p></div><div><span>02</span><h3>Colour</h3><p>Try natural shades or imagine your own.</p></div><div><span>03</span><h3>Discover</h3><p>Compare leaves. Ask questions. Keep exploring.</p></div></div></section>
+  </main>
+  <footer><a class="brand" href="#">❧ &nbsp; World Teacher Press</a><p>A little colour. A little knowledge. A closer look at nature.</p><a href="#collection">Back to the leaves ↑</a></footer>
+  <dialog id="plant-dialog" aria-labelledby="plant-title"><button class="close" aria-label="Close plant details">×</button><div id="plant-content"></div></dialog>
+</body></html>
